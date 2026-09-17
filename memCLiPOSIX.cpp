@@ -70,15 +70,5 @@ int main()
 
     // Apagar a memória compartilhada
 
-    int memCompartId = criaMemComp("/memoria");
-
-    void* ptr = mapeiaMemComp(memCompartId, TAM);
-
-    cout << "Cliente: Leu mensagem da memória compartilhada: " << (char*)ptr << endl;
-
-    desmapeiaMemComp(ptr, TAM);
-
-    apagaMemComp("/memoria");
-
     return 0;
 }
